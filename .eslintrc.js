@@ -24,6 +24,10 @@ module.exports = {
     '@typescript-eslint/no-inferrable-types': 'off',
     'no-console': 'off',
     'no-underscore-dangle': 'off',
-    'no-return-assign': 'off'
+    'no-return-assign': 'off',
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'no-useless-constructor': 'off',
+    'class-methods-use-this': 'off'
   },
 };

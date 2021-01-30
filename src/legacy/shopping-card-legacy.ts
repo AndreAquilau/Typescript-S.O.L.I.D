@@ -5,7 +5,7 @@ type CartItem = {
 
 type OrderStatus = 'open' | 'closed';
 
-export default class ShoppingCard {
+export default class ShoppingCardLegacy {
   private readonly _items: CartItem[] = [];
 
   private _orderStatus: OrderStatus = 'open';
@@ -39,8 +39,8 @@ export default class ShoppingCard {
     }
     this._orderStatus = 'closed';
 
-    ShoppingCard.sendMessage(`Seu pedido com total R$${this.total()} foi recebido.`);
-    ShoppingCard.saveOrder();
+    ShoppingCardLegacy.sendMessage(`Seu pedido com total R$${this.total()} foi recebido.`);
+    ShoppingCardLegacy.saveOrder();
     this.clear();
   }
 
@@ -66,7 +66,7 @@ export default class ShoppingCard {
   }
 }
 
-const shoppingCard = new ShoppingCard();
+const shoppingCard = new ShoppingCardLegacy();
 
 shoppingCard.addItem({
   name: 'Camiseta',
