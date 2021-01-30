@@ -4,6 +4,6 @@ module.exports = {
   "tabWidth": 2,
   "singleQuote": true,
   "semi": true,
-  "endOfLine": "all",
+  "endOfLine": "lf",
   "printWidth": 120
 };

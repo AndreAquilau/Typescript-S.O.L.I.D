@@ -20,6 +20,10 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-inferrable-types': 'off',
+    'no-console': 'off',
+    'no-underscore-dangle': 'off',
+    'no-return-assign': 'off'
   },
 };
