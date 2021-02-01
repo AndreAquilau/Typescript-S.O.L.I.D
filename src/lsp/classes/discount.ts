@@ -3,6 +3,8 @@ export abstract class Discount {
 
   calculate(price: number): number {
     return price - price * this.discount;
+    // Força que as sub-class implemente os mêtodos da class abstract
+    // throw new Error('Not Implemented Error');
   }
 }
 
