@@ -28,6 +28,7 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'no-useless-constructor': 'off',
-    'class-methods-use-this': 'off'
+    'class-methods-use-this': 'off',
+    'max-classes-per-file': 'off',
   },
 };
